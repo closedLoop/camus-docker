@@ -5,7 +5,9 @@ This is to support the development and implementation of:
 [linkedin/camus](https://github.com/linkedin/camus)
 
 ## Usage
-TBD
+
+sudo docker build -t closedloop/docker-camus .
+sudo docker run -t -i --name camus closedloop/docker-camus
 
 ## Goals
 Assuming Zookeeper and Kafka Cluster are running,
