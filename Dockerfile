@@ -38,7 +38,7 @@ ENV PATH ${M2_HOME}/bin:${PATH}
 #RUN cat maven_plugins |  sed "s/KEYWORD/$(echo $REPLACE | sed -e 's/\\/\\\\/g' -e 's/\//\\\//g' -e 's/&/\\\&/g')/g"
 
 # Compile code
-WORKDIR /usr/src/linedin/camus
+WORKDIR /usr/src/linkedin/camus
 RUN  mvn clean package
 
 ENV IMAGE_VERSION_DATE 2014-09-12
